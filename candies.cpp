@@ -1,0 +1,61 @@
+/**
+ *	Author : hkbharath
+ *	Problem : Candies HackerRank
+ *	Lang : C++
+ */	
+
+#include <cstdio>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+#include <climits>
+#include <map>
+#include <cassert>
+#include <queue>
+
+#define FOR(a,b,c) for(int a=b;a<=c;++a)
+#define RFOR(a,b,c) for(int a=b;a>=0;--a)
+#define PB(a,b) a.push_back(b);
+#define MP(a,b) make_pair(a,b);
+#define MOD 1000000007
+
+typedef long long int64;
+
+using namespace std;
+
+void solve(int tt){
+	int n,p,pr;
+	scanf("%d",&n);
+	int ra[n+2],dp[n+2];
+	dp[0]=0;
+	ra[n+1]=ra[0]=0;
+	pr=0;
+	FOR(i,1,n){
+		scanf("%d",ra+i);
+		if(ra[i]>ra[i-1])
+			dp[i]=dp[i-1]+1;
+		else if(dp[i-1]==1){
+			dp[i]=1;
+			RFOR(j,i-1,1)
+				if(ra[j]>ra[j+1])
+					dp[j]=max(dp[j+1]+1,dp[j]);
+				else
+					break;
+		}		
+		else
+			dp[i]=1;
+	}
+	int64 sum=0;
+	FOR(i,1,n)sum+=dp[i];//printf("dp[%d] = %d\n",i,dp[i]);
+	printf("%lld\n",sum);
+}
+
+int main(){
+	int t=0,it=0;
+//	for(scanf("%d",&t),it=1;it<=t;it++)
+		solve(it);
+}

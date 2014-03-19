@@ -1,0 +1,29 @@
+// BEGIN CUT HERE
+
+// END CUT HERE
+#line 5 "OneDimensionalRobotEasy.cpp"
+
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+
+using namespace std;
+
+class OneDimensionalRobotEasy {
+	public:
+	int finalPosition(string commands, int A, int B) {
+		int n=commands.length();
+		int pos=0;
+		A=-1*A;
+		for(int i=0;i<n;i++){	
+			if(commands[i]=='R')++pos;
+			else --pos;
+			if(pos<A)pos=A;
+			if(pos>B)pos=B;
+		}
+		return pos;	
+	}
+};

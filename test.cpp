@@ -1,0 +1,50 @@
+/**
+ *	Author : hkbharath
+ *	Problem : Team Splitting 
+ *	Lang : C++
+ */	
+ 
+#include <cstdio>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+#include <climits>
+#include <map>
+#include <cassert>
+#include <queue>
+ 
+#define FOR(a,b,c) for(int a=b;a<=c;++a)
+#define RFOR(a,b,c) for(int a=b;a>=0;--a)
+#define PB(a,b) a.push_back(b);
+#define MP(a,b) make_pair(a,b);
+#define MOD 1000000007
+#define mod 1000000
+typedef long long int64;
+ 
+using namespace std;
+int64 sol[3000001];
+ 
+inline void solve(int tt){
+	int n;
+	int64 a,b,c,d,ans=0;
+	scanf("%d%lld%lld%lld%lld",&n,&a,&b,&c,&d);
+	sol[0]=0;
+	sol[1]=d;
+	FOR(i,2,n)
+		sol[i]=((sol[i-1]*((a*sol[i-1])%mod+b))%mod+c)%mod;
+		for(int i=n;i>0;i-=2)
+			ans+=(sol[i]-sol[i-1]);
+	//if(n&1)ans+=sol[0];
+	//if(ans<0)ans*=-1;
+	printf("%lld\n",ans);
+}
+ 
+int main(){
+	int t,it;
+	for(scanf("%d",&t),it=1;it<=t;it++)
+		solve(it);
+}
