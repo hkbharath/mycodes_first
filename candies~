@@ -1,0 +1,51 @@
+/**
+ *	Author : hkbharath
+ *	Problem : Candies HackerRank
+ *	Lang : C++
+ */	
+
+#include <cstdio>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+#include <climits>
+#include <map>
+#include <cassert>
+#include <queue>
+
+#define FOR(a,b,c) for(int a=b;a<=c;++a)
+#define RFOR(a,b,c) for(int a=b;a>=0;--a)
+#define PB(a,b) a.push_back(b);
+#define MP(a,b) make_pair(a,b);
+#define MOD 1000000007
+
+typedef long long int64;
+typedef pair<int,int> ipair;
+
+using namespace std;
+
+void solve(int tt){
+	int n;
+	scanf("%d",&n);
+	int ra[n+2];
+	ra[n+1]=ra[0]=0;
+	for(int i=1;i<=n;i++){
+		scanf("%d",a+i);
+		if(ra[i]>ra[i-1])
+			ra[i]=ra[i-1]+1;
+		else
+			ra[i]=1;
+	}
+	printf("%d\n",ra[n]);				
+		
+}
+
+int main(){
+	int t=0,it=0;
+//	for(scanf("%d",&t),it=1;it<=t;it++)
+		solve(it);
+}

@@ -41,7 +41,7 @@ void rotate(){
 			if(rbrd[j][i]){
 				int l,re = rbrd[j][i];
 				for(l=j+1;l<n && !rbrd[i][j];l++)
-					rbrd[l-1][i]=rbrd[l][j];
+					rbrd[l][i]=rbrd[l-1][j];
 				rbrd[l-1][i] = re;
 			}
 }

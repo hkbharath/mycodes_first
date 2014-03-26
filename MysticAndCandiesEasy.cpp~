@@ -1,0 +1,53 @@
+// BEGIN CUT HERE
+
+// END CUT HERE
+#line 5 "MysticAndCandiesEasy.cpp"
+
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+
+using namespace std;
+
+class MysticAndCandiesEasy {
+	public:
+	int minBoxes(int C, int X, vector <int> high) {
+		
+		vector <int> pos;
+		int n = high.size();
+		int ct=n ;
+		int min = 1;
+		for(int i=0;i<n;i++)pos.push_back(0);
+		while(C && ct>0){
+			min=C/ct;
+			if(!min) min=1;
+			//printf("%d\n",min);
+			for(int i=0;i<n;i++){
+				if(!high[i])continue;
+				if(high[i]<min){
+					pos[i]+=high[i];
+					C-=high[i];
+					high[i]=0;
+					ct--;
+				}
+				else{
+					pos[i]+=min;
+					high[i]-=min;
+					C-=min;
+				}
+			}
+		}
+		//for(int i=0;i<n;i++)printf("%d ",pos[i]);
+		sort(pos.begin(),pos.end());
+		ct=0;min=0;
+		for(int i=n-1;i>=0;i--){
+			ct++;
+			min+=pos[i];
+			if(min>=X)break;
+		}
+		return ct;		
+	}
+};

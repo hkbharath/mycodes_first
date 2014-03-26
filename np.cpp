@@ -1,0 +1,50 @@
+/**
+ *	Author : hkbharath
+ *	Problem :
+ *	Lang : C++
+ */	
+
+#include <cstdio>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+#include <climits>
+#include <map>
+#include <cassert>
+#include <queue>
+
+#define FOR(a,b,c) for(int a=b;a<=c;++a)
+#define RFOR(a,b,c) for(int a=b;a>=0;--a)
+#define PB(a,b) a.push_back(b);
+#define MP(a,b) make_pair(a,b);
+#define MOD 1000000007
+
+typedef long long int64;
+
+using namespace std;
+
+int pr[110];
+
+void solve(int tt){
+	int n;
+	scanf("%d",&n);
+	for(int i=n+1;;i++)
+		if(pr[i]){
+			printf("%d\n",i);
+			break;
+		}
+}
+
+int main(){
+	for(int i=2;i<110;i++)pr[i]=1;
+	for(int i=2;i<110;i++)
+		if(pr[i])for(int j=2;j*i<110;j++)
+			pr[i*j]=0;
+	int t,it;
+	for(scanf("%d",&t),it=1;it<=t;it++)
+		solve(it);
+}
