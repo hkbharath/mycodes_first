@@ -1,0 +1,20 @@
+import sys
+import itertools
+import math
+import collections
+import functools
+from random import randint
+
+T=1000
+N=1000
+C=0.000
+for j in range(0,1000):
+	AR=range(0,1000)
+	for i in range(0,1000):
+		r=randint(i,999)
+		AR[r],AR[i] = AR[i],AR[r]
+	for i in range(0,1000):
+		if AR[i]>i:
+			C = C+1
+print C/1000
+

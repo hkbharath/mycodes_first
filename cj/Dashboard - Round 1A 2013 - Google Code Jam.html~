@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/2418487/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Round 1A 2013 - Google Code Jam
+  </title>
+  <link rel="stylesheet" type="text/css" href="./Dashboard - Round 1A 2013 - Google Code Jam_files/base.css">
+  <link rel="stylesheet" type="text/css" href="./Dashboard - Round 1A 2013 - Google Code Jam_files/dashboard.css">
+  
+  <script type="text/javascript" async="" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/ga.js"></script><script type="text/javascript" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/Dashboard_en.js"></script>
+  
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.main().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "2418487";
+      GCJ.contest.name = "Round 1A 2013";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 1;
+      
+      GCJ.contest.start_int = 1367024400;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=2418487"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //--></script>
+</head>
+
+<body onload="GCJ.main()">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/">
+    <img src="./Dashboard - Round 1A 2013 - Google Code Jam_files/logo_image2.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Round 1A 2013</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link"> <a href="file:///home/bharathkumar/codes/codejam/p1.html"> A. Bullseye </a> </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Manage your Energy  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link"><a href="file:///home/bharathkumar/codes/codejam/Dashboard%20-%20Round%201A%202013%20-%20Google%20Code%20Jam.html#dsb-problem-page0">C. Good Luck  </a></div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">1</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Bullseye</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">11pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>5843/6182 users</b> correct (95%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">13pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>1796/4784 users</b> correct (38%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Manage your Energy</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">12pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>2312/3777 users</b> correct (61%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">23pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>455/1126 users</b> correct (40%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Good Luck</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>1359/1768 users</b> correct (77%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">31pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>31/605 users</b> correct (5%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">Myth5</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">Xhark</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">Dlougach</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">tjhance7</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">mystic</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">wata</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">JongMan</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">dzhulgakov</td><td class="dsb-score-td" id="sbScore_7">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">pieguy</td><td class="dsb-score-td" id="sbScore_8">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">kmod</td><td class="dsb-score-td" id="sbScore_9">100</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/2418487/scoreboard?c=2418487">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&passive=true&continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D2418487&ltmpl=">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> Manage your Energy</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>11 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/2418487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzdlODhhYWIyN2FjYzM3Y2ZmNjBjMzlhMWI3ZmI2OTl8fDEzOTc1NDgzODIzNzc4OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="2464487"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>13 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/2418487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzdlODhhYWIyN2FjYzM3Y2ZmNjBjMzlhMWI3ZmI2OTl8fDEzOTc1NDgzODIzNzc4OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="2464487"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Maria has been hired by the Ghastly Chemicals Junkies (GCJ) company to help them manufacture <b>bullseyes</b>. A <b>bullseye</b> consists of a number of concentric rings (rings that are centered at the same point), and it usually represents an archery target. GCJ is interested in manufacturing black-and-white bullseyes.
+<br><br>
+<img src="./Dashboard - Round 1A 2013 - Google Code Jam_files/saved_resource">
+<br><br>
+Maria starts with <b>t</b>&nbsp;millilitres of black paint, which she will use to draw rings of thickness 1cm (one centimetre). A ring of thickness 1cm is the space between two concentric circles whose radii differ by 1cm.
+</p>
+<p>
+Maria draws the first black ring around a white circle of radius <b>r</b> cm.  Then she repeats the following process for as long as she has enough paint to do so:
+</p><ol>
+<li>Maria imagines a white ring of thickness 1cm around the last black ring.</li>
+<li>Then she draws a new black ring of thickness 1cm around that white ring.</li>
+</ol>
+Note that each "white ring" is simply the space between two black rings.
+<p></p>
+<p>
+The area of a disk with radius 1cm is <b>π</b>&nbsp;cm<sup>2</sup>. One millilitre of paint is required to cover area <b>π</b>&nbsp;cm<sup>2</sup>.  What is the maximum number of black rings that Maria can draw? Please note that:
+</p><ul>
+<li>Maria only draws complete rings. If the remaining paint is not enough to draw a complete black ring, she stops painting immediately.</li>
+<li>There will always be enough paint to draw at least one black ring.</li>
+</ul>
+<p></p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow.  Each test case consists of a line containing two space separated integers: <b>r</b> and <b>t</b>.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #<b>x</b>: <b>y</b>", where <b>x</b> is the case number (starting from 1) and <b>y</b> is the maximum number of black rings that Maria can draw.
+</p>
+
+<h3>Limits</h3>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 1000.<br>
+1 ≤ <b>r</b>, <b>t</b>  ≤ 1000.
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 6000.<br>
+1 ≤ <b>r</b> ≤ 10<sup>18</sup>.<br>
+1 ≤ <b>t</b> ≤ 2 × 10<sup>18</sup>.
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+</td></tr>
+<tr>
+<td>
+<code>
+5<br>
+1 9<br>
+1 10<br>
+3 40<br>
+1 1000000000000000000<br>
+10000000000000000 1000000000000000000<br>
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<br><hr><br>
+</td>
+</tr>
+<tr>
+<td>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+Case #1: 1<br>
+Case #2: 2<br>
+Case #3: 3<br>
+Case #4: 707106780<br>
+Case #5: 49<br>
+<br>
+</code>
+</td></tr>
+</tbody></table>
+</div></div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>12 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/2418487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzdlODhhYWIyN2FjYzM3Y2ZmNjBjMzlhMWI3ZmI2OTl8fDEzOTc1NDgzODIzNzc4OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="2645486"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>23 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/2418487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzdlODhhYWIyN2FjYzM3Y2ZmNjBjMzlhMWI3ZmI2OTl8fDEzOTc1NDgzODIzNzc4OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="2645486"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+You've got a very busy calendar today, full of important stuff to do. You worked hard to prepare and make sure all the activities don't overlap. Now it's morning, and you're worried that despite all of your enthusiasm, you won't have the energy to do all of this with full engagement.
+</p>
+
+<p>
+You will have to manage your energy carefully. You start the day full of energy - <b>E</b> <a href="http://en.wikipedia.org/wiki/Joule" target="_blank">joules</a> of energy, to be precise. You know you can't go below zero joules, or you will drop from exhaustion. You can spend any non-negative, integer number of joules on each activity (you can spend zero, if you feel lazy), and after each activity you will regain <b>R</b> joules of energy.  No matter how lazy you are, however, you <b>cannot</b> have more than <b>E</b> joules of energy at any time; any extra energy you would regain past that point is wasted.
+</p>
+
+<p>
+Now, some things (like solving Code Jam problems) are more important than others. For the <b>i</b>th activity, you have a value <b>v<sub>i</sub></b> that expresses how important this activity is to you. The <i>gain</i> you get from each activity is the value of the activity, multiplied by the amount of energy you spent on the activity (in joules). You want to manage your energy so that your total gain will be as large as possible.
+</p>
+
+<p>
+Note that you <i>cannot</i> reorder the activities in your calendar. You just have to manage your energy as well as you can with the calendar you have.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each test case is described by two lines. The first contains three integers: <b>E</b>, the maximum (and initial) amount of energy, <b>R</b>, the amount you regain after each activity, and <b>N</b>, the number of activities planned for the day. The second line contains <b>N</b> integers <b>v<sub>i</sub></b>, describing the values of the activities you have planned for today.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #<b>x</b>: <b>y</b>", where <b>x</b> is the case number (starting from 1) and <b>y</b> is the maximum gain you can achieve by managing your energy that day.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>E</b> ≤ 5.<br>
+1 ≤ <b>R</b> ≤ 5.<br>
+1 ≤ <b>N</b> ≤ 10.<br>
+1 ≤ <b>v<sub>i</sub></b> ≤ 10.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>E</b> ≤ 10<sup>7</sup>.<br>
+1 ≤ <b>R</b> ≤ 10<sup>7</sup>.<br>
+1 ≤ <b>N</b> ≤ 10<sup>4</sup>.<br>
+1 ≤ <b>v<sub>i</sub></b> ≤ 10<sup>7</sup>.<br>
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+5 2 2<br>
+2 1<br>
+5 2 2<br>
+1 2<br>
+3 3 4<br>
+4 1 3 5<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 12<br>
+Case #2: 12<br>
+Case #3: 39<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<p> In the first case, we can spend all 5 joules of our energy on the first activity (for a gain of 10), regain 2 and spend them on the second activity. In the second case, we spend 2 joules on the first activity, regain them, and spend 5 on the second. In the third case, our regain rate is equal to the maximum energy, meaning we always recover all energy after each activity - so we can spend full 3 joules on each activity.</p></div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input 1<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small-1</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice-1.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice-1.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/2418487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzdlODhhYWIyN2FjYzM3Y2ZmNjBjMzlhMWI3ZmI2OTl8fDEzOTc1NDgzODIzNzc4OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="2652486"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Small input 2<br>31 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-small-2</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1A 2013 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-small-practice-2.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice-2.in.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/2418487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzdlODhhYWIyN2FjYzM3Y2ZmNjBjMzlhMWI3ZmI2OTl8fDEzOTc1NDgzODIzNzc4OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="2652486"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Maryam and Peiling have recently been practicing a new number trick, and they need your help to get it right. The trick goes as follows: Maryam starts by picking <b>N</b> independent random integer numbers, each between 2 and <b>M</b>, inclusive, appearing with equal probability, and writes them down on <b>N</b> cards, one number per card. Note that some numbers might be equal. Then, she repeats the following <b>K</b> times: take a random subset of cards (each card is taken with probability 0.5), and write down the product of the numbers on those cards. Having done all that, she shows all <b>K</b> products to Peiling, and Peiling's goal is to guess what the original <b>N</b> numbers were, knowing just <b>N</b>, <b>M</b>, and the products.
+</p>
+<p>
+An example game with <b>N</b>=3, <b>M</b>=4, <b>K</b>=4 might go like this: first, Maryam picks 3 random numbers between 2 and 4, inclusive - let's say she randomly chose <b>A</b><sub>1</sub>=3, <b>A</b><sub>2</sub>=3 and <b>A</b><sub>3</sub>=4. Then, she calculates four products of random subsets of 
+those three numbers. For example, let's say those products are <b>A</b><sub>1</sub>*<b>A</b><sub>2</sub>=9, <b>A</b><sub>3</sub>=4, <b>A</b><sub>1</sub>*<b>A</b><sub>2</sub>*<b>A</b><sub>3</sub>=36, and 1=1 (the last product has no numbers in it, so it's equal to 1). Peiling receives numbers 9,4,36,1 from her, and she's also told that <b>N</b>=3 and <b>M</b>=4. In this case, just seeing the number 36 is enough to find what the original numbers were, since the only way to represent that as a product of up to 3 numbers, each up to 4, is 3*3*4. So Peiling says that the original numbers were 3, 3 and 4, and the audience is impressed.
+</p>
+<p>
+In some other cases, guessing the original numbers is not as simple. For example, it might happen that all products are equal to 1.  In that case there is no way to know anything about the hidden numbers, so Peiling cannot always be right. However, Peiling knows that Maryam follows the procedure exactly as described above: she selects the first <b>N</b> numbers as independent uniform integers between 2 and <b>M</b>, and then selects <b>K</b> independent random subsets, picking each number into each subset independently with probability 0.5. Help Peiling use that knowledge to make better guesses!
+</p>
+
+<h3>Solving this problem</h3>
+<p>
+This problem is a bit unusual for Code Jam. You will be given <b>R</b> independent sets of <b>K</b> numbers each, and should print an answer for each set — this part is as usual. However, you don't need to get all of your answers right! Your solution will be considered correct if answers for at least <b>X</b> sets are correct, with the value of <b>X</b> given in the Limits for the given input, below. However, you must follow the output format, even for sets in which your answer doesn't turn out to be correct. The <i>only</i> thing that can be wrong on any sets, yet still allow you to be judged correct, is the digits you output; but there should still be exactly <b>N</b> digits printed for each case, and each digit must be between <b>2</b> and <b>M</b>.
+</p>
+<p>
+This problem involves randomness, and thus it might happen that even the best possible solution doesn't make <b>X</b> correct guesses (remember the situation when all products are equal to 1?) for a certain input.  Because of that, this problem doesn't have a Large input, but instead has two Small inputs.  That means you can try again if you think you got unlucky.  You may only attempt to solve the second Small input once you have solved the first one.  Otherwise, both Small inputs work in the same way as Small inputs for any other problem: you may try multiple times, and there is a 4-minute penalty for incorrect submissions if you later solve that input, even if the only reason you got it wrong was chance.
+</p>
+<p>
+Good luck!
+</p>
+
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>, which is always equal to 1.  The second line of the input file contains four space-separated integers <b>R</b>, <b>N</b>, <b>M</b> and <b>K</b>, in that order. The next <b>R</b> lines describe one set of <b>K</b> products each. Each of those lines contains <b>K</b> space-separated integers — the products that Maryam passes to Peiling. It is guaranteed that all sets in the input are generated independently randomly according to the procedure from the problem statement.
+</p>
+
+<h3>Output</h3>
+<p>
+On the first line, output "Case #1:". On each of the next <b>R</b> lines output <b>N</b> digits — your guess for Maryam's hidden numbers for the corresponding set of products. You can print the numbers for each set in any order, but there must be exactly <b>N</b> digits, each between 2 and <b>M</b>, inclusive (note that M&lt;10, so none of the numbers will be more than one digit). Do not put spaces between the digits.
+</p>
+
+<h3>Limits</h3>
+
+<h4>First Small dataset</h4>
+<p>
+<b>T</b> = 1.<br>
+<b>R</b> = 100.<br>
+<b>N</b> = 3.<br>
+<b>M</b> = 5.<br>
+<b>K</b> = 7.<br>
+You need to get at least <b>X</b>=50 sets right.
+</p>
+
+<h4>Second Small dataset</h4>
+<p>
+<b>T</b> = 1.<br>
+<b>R</b> = 8000.<br>
+<b>N</b> = 12.<br>
+<b>M</b> = 8.<br>
+<b>K</b> = 12.<br>
+You need to get at least <b>X</b>=1120 sets right.
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+1<br>
+2 3 4 4<br>
+9 4 36 1<br>
+1 1 1 1<br>
+</code>
+</td>
+<td>
+<code>
+Case #1:<br>
+343<br>
+222<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<h3>Note</h3>
+
+<p>
+The sample input doesn't follow the limitations for either input.  In the sample input, you need to get at least <b>X</b>=1 sets right.
+</p>
+<p>
+In the sample input, Maryam picked the numbers 3, 3, 4 the first time, and the numbers 2, 4, 4 the second time.  In the sample output, Peiling guessed correctly the first time, but not the second time.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p3" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span></div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div"><p>
+Round 1A was our biggest non-Qualification round ever, with 6414 contestants who downloaded at least one input.  Contestants faced three challenging problems: Bullseye could be tricky and cause integer overflow without some careful attention (or the use of Python, or similar languages), and 62% of attempts on the Large input failed as a consequence.  Manage Your Energy gave contestants a similarly hard time, with a 60% failure rate: many people found their algorithms didn't run quickly enough to fill a calendar with 10,000 events.
+</p>
+<p>
+The toughest problem of all was the non-traditional Good Luck.  The problem required some knowledge of probability, and gave contestants the opportunity to retry the second input set.  It didn't help most of them, though: <b>95%</b> of the people who attempted the problem got it wrong.
+</p>
+<p>
+At the end of the day, though, an impressive 92% of our contestants solved something, and 23 people got <i>everything</i> right.
+</p><p>
+We hope everybody enjoyed the round!  Congratulations to the Top 1000, who have now made it to Round 2; and to everyone else, we'll see you in 1B and 1C!
+</p>
+
+<hr>
+<p>Cast</p>
+
+<p>Problem A. <i>Bullseye</i> Written by Khaled Hafez. Prepared by Karim Nosseir and Hackson Leung.</p>
+
+<p>Problem B. <i>Manage Your Energy</i> Written by Onufry Wojtaszczyk. Prepared by Zhen Wang and Onufry Wojtaszczyk.</p>
+
+<p>Problem C. <i>Good Luck</i> Written by Petr Mitrichev. Prepared by Tomek Czajka and Petr Mitrichev.</p>
+
+Contest analysis presented by Bartholomew Furrow, Hackson Leung, Onufry Wojtaszczyk and Tomek Czajka.
+
+Solutions and other problem preparation by Igor Naverniouk, Bartholomew Furrow, Hao Pan, Jan Kuipers and Victor Passichenko.</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><p>
+First, we need to know the area of the first black ring. It can be calculated by subtracting the area of a white circle with radius <b>r</b> from a black circle with radius <b>r</b>+1 cm. That is, the area is (<b>r</b>+1)<sup>2</sup>π-<b>r</b><sup>2</sup>π cm<sup>2</sup>. Expanding we get (2<b>r</b>+1)π cm<sup>2</sup>. Since 1mL of paint can cover area π cm<sup>2</sup>, we need exactly 2<b>r</b>+1 mL of paint to draw the first black ring. For the second black ring, we do the same: subtracting the area of a white circle with radius <b>r</b>+2 cm from a black circle with radius <b>r</b>+3 cm, thus we need 2<b>r</b>+5 mL to draw. In general, we need exactly (<b>r</b>+2<b>k</b>-1)<sup>2</sup>-(<b>r</b>+2<b>k</b>-2)<sup>2</sup> = 2<b>r</b>+4<b>k</b>-3 mL of paint to print the <b>k</b>-th black ring.
+</p>
+<p>
+For small we know that the answer is less than <b>t</b> = 1000 anyway, so that we can try adding black rings one by one until the total amount of paint used including the next black ring exceeds <b>t</b>, then we stop adding and output the number of black rings we have included so far.
+</p>
+<p>
+However, this does not work well with the large input as the answer can be much bigger! This can be verified by the fourth sample (we intended to be kind to contestants, but turns out many still failed the large due to integer overflow :-(). How can we improve the algorithm?
+</p>
+<p>
+The key is the following: if you can paint at most <b>k</b> black rings using <b>t</b> mL of paint, for sure you can also use it to draw 1 black ring, 2 black rings, ... up to <b>k</b>-1 black rings. So instead of searching for the answers linearly, we can perform <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">binary search</a> on "Is it possible to use <b>t</b> mL of paint to draw <b>k</b> black rings?" to find the answer more efficiently. Now the remaining question is how much paint is used to draw <b>k</b> black rings.
+</p>
+<p>
+Looking back about the total amount of paint to draw individual black rings, it is easily observed that they form an arithmetic progression: 2<b>r</b>+1, 2<b>r</b>+5, 2<b>r</b>+9, ... 2<b>r</b>+4<b>k</b>-3. Then the total amount is simply the sum of the progression, which is (2<b>r</b>+1+2<b>r</b>+4<b>k</b>-3)×<b>k</b>÷2 = (2<b>r</b>+2<b>k</b>-1)<b>k</b> mL. This is sufficient to completely solve the problem.
+</p>
+<p>Here is a complete solution in Python for reference:</p>
+<pre>num_cases = int(raw_input())
+for casenum in range(1, num_cases+1):
+  r, t = [int(z) for z in raw_input().split()]
+  res, lo, hi = 0, 1, t
+  while lo &lt;= hi:
+    mid = (lo + hi) / 2
+    if mid * (2 * r + 2 * mid - 1) &gt; t:
+      hi = mid - 1
+    else:
+      lo, res = mid + 1, mid
+  print "Case #%d: %d" % (casenum, res)
+</pre>
+<p>You might think that you need big integer libraries to solve the large input, in fact you don't. For example, double precision floating point numbers suffice to check the condition correctly. A more elegant way is to find the first range with <b>exponential growth</b> in length so that there exists a value in the range which fails to satisfy the condition. It takes logarithmic time to find the required range. Then we perform binary search on it and compute the answer. Here is a C++ snippet that describes the algorithm without using any big integer library.</p>
+<pre>// Check if we can draw k black rings.
+bool Check(long long r, long long t, long long k) {
+  return 2 * k * k + (2 * r - 1) * k &lt;= t;
+}
+
+// Find the maximum number of black rings that can be drawn.
+long long Solve(long long r, long long t) {
+  long long left = 0, right = 1;
+  // Find the range that the answer lies in.
+  while(Check(r,t,right)) {
+    left = right;
+    right *= 2;
+  }
+
+  // Binary search on the range [left, right) for the answer.
+  while(right - left &gt; 1) {
+    long long k = (left + right) / 2;
+    if (Check(r, t , k))
+      left = k;
+    else
+      right = k;
+  }
+  return left;
+}
+</pre></div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>The small dataset</h2>
+<p>The limits in the small dataset are very small for this problem, and they allow brute-force approaches. With a fast enough language, even an algorithm that for each activity in the row tries each possible amount of energy usage (from 0 to current energy) will run in time.</p>
+
+<p>The large dataset obviously does not allow such a solution — both the number of activities and the number of possible amounts of energy to consider are significantly too large.</p>
+
+<h2>The highest-valued activity</h2>
+<p>We will begin solving this problem by looking at the highest-value activity (if there is more than one, pick any of them), let this be activity number <b>a</b>. We will prove that there exists an optimal solution that uses full <b>E</b> joules for this activity.</p>
+
+<p>Consider any optimal solution. First assume that we had less than <b>E</b> joules at the start of activity <b>a</b>. This means we spent energy on some other activity before (since we started with <b>E</b> energy), let <b>b</b> be the number of the last activity we spent non-zero energy on before <b>a</b>. Now consider a solution in which we spend one joule less on <b>b</b>. Since our energy wasn't <b>E</b> in the original solution at the beginning of <b>a</b>, if we spend one less joule on <b>b</b>, we will still have at most <b>E</b> energy at the beginning of <b>a</b>, and so it won't go to waste. Thus, we can spend this extra joule on <b>a</b>, and then proceed as in the original solution, since after <b>a</b> we have exactly the same amount of energy as in the original. The difference in values of these two solutions is -<b>v<sub>b</sub></b> + <b>v<sub>a</sub></b>, which is non-negative (since <b>a</b> was one of the highest-value solutions). We can repeat this procedure until we obtain a solution which is no worse than the original (and thus still optimal), and has <b>E</b> joules at the beginning of <b>a</b>.</p>
+
+<p>Now assume that we have an optimal solution that enters <b>a</b> with <b>E</b> joules, but does not use all of them on <b>a</b>. We can change it in a similar fashion. Find the first activity after <b>a</b> on which we spend non-zero energy, call it <b>c</b>. If it doesn't exist, or if any energy is wasted between <b>a</b> and <b>c</b>, we can simply expend one more joule on <b>a</b> and obtain a strictly better solution. Otherwise, we can spend one joule less on <b>c</b> and one more on <b>a</b>, to obtain a solution that's no worse.</p>
+
+<p>After repeating these procedures as long as we can, we obtain an optimal solution in which, indeed, we spend full <b>E</b> joules on <b>a</b>.</p>
+
+<h2>Other activities</h2>
+<p>Notice that the fact we are spending <b>E</b> energy on <b>a</b> has some implications on the nearby activites. For instance, we will have at most <b>R</b> energy available at <b>a</b>+1, at most 2<b>R</b> at <b>a</b>+2, etc. At the same time, we need to leave <b>a</b>-1 with at least <b>E</b>-<b>R</b> energy, leave <b>a</b>-2 with at least <b>E</b>-2<b>R</b> energy, and so on.</p>
+
+<p>Consider the activity <b>d</b> with the next-highest value after <b>a</b>. We have a limit on how much energy we have at most when entering <b>d</b> (it's the lower of two numbers — <b>E</b> and whatever limit the spending on <b>a</b> imposed); and we know how much energy we have left unspent (the higher of 0 and the limit imposed by <b>a</b>). We will spend anything between these two limits on activity <b>d</b> — a reasoning identical to the one for <b>a</b> proves that this doesn't prevent us from getting an optimal solution.</p>
+
+<p>We will continue in this fashion. At each step, we will have for each activity an amount of energy that we have to leave after ending it for activities we already considered, and the maximum amount of energy we can have beginning this activity. At each step, we will take the highest-valued activity we haven't considered yet, and assign to it all the energy we can, updating the limits afterwards.</p>
+
+<p>The time complexity of this solution, as formulated, is O(<b>N</b><sup>2</sup>) — in each of the <b>N</b> steps we find the highest-valued activity not considered yet, assign energy to it, and update limits for all other activities. Due to the constraints on input size that we have this will be fast enough (at least if written reasonably efficiently). It is possible to do better, though.</p>
+
+<h2>An O(<b>N</b> log<b>N</b>) solution</h2>
+<p> First note that finding the highest-valued activity not considered yet can be done faster — it's enough to just sort the activities by value up front, and then consider them in descending order.</p>
+
+<p>The more difficult part is updating the limits. To do this, we look at how the limits are set again. Each activity we assign imposes a limit on how much energy do we have in later activities, and how much do we have to leave behind in the previous activities. We would like to prove that for each activity <b>a</b> the limit we have to consider comes from the latest activity in the day we considered before <b>a</b> for how much energy we have, and the first activity we considered later in the day than <b>a</b> for how much we need to leave unspent.</p>
+
+<p>This is not surprising. Consider, for instance, the activity <b>b</b>, which is the latest activity considered before <b>a</b>, and some activity <b>c</b> which comes even earlier in the day. If we considered <b>c</b> before <b>b</b>, the loss of energy on activity <b>c</b> is already taken into account when we consider <b>b</b>, so the limits imposed by <b>b</b> will be no less stringent. On the other hand, if we considered <b>c</b> after <b>b</b>, it means that the energy spent on <b>c</b> was already limited so that it would all be recovered by the time we reach <b>b</b> — and so it does not impact the amount of energy we have available at <b>a</b>. A similar reasoning works for activities later in the day than <b>a</b>.</p>
+
+<p>A solution in which each step takes logarithmic time will take each considered activity and insert it (along with the limits it imposes) into a binary search tree allowing logarithmic-time insertions and lower/upper-bound operations (like the "set" structure of many languages). Then, at each subsequent activity, we find the nearest activity already considered before and after it, compute the limits they impose on the current activity, spend all the energy we can (updating the total value) and insert this activity (along with new limits) into the tree.</p>
+
+<p>Note that if <b>R</b> ≥ <b>E</b>, you can just assume <b>R</b> = <b>E</b>, since any energy you regain above <b>E</b> will necessarily go to waste. We observed this and changed the problem statement to avoid this unnecessary case; but we missed some of the inputs in which this should have been corrected, due to which we had to change the statement back and issue a clarification during the contest. We apologize for the confusion this caused.</p>
+
+<h2>An O(<b>N</b>) solution</h2>
+<p>One nice thing about running a contest for a group of very smart people is that they come up with solutions for problems that the authors didn't even think of! This was the case with this problem — after the contest we learned some contestants came up with a O(<b>N</b>) solution.</p>
+
+<p>The key to this solution is observing that we can actually know up front how much energy we will want to spend at a given day. As seen above, if there is no more valuable activity ahead of us, we should just spend all the energy we have at the moment. On the other hand, if there is something more valuable, it's always a good idea to save up energy if we will be able to use it for the more valuable activity. To make use of this we need to know, for each activity, the nearest activity in the future that's more valuable.</p>
+
+<p>Calculating such an array is a classic problem, it is described, e.g., as the "Stock Span Problem" in the <a href="http://en.wikipedia.org/wiki/Stack_(abstract_data_type)" target="_blank">Wikipedia article on stacks</a>. Once we have this array, we can, for each activity in chronological order, do the following:
+</p><ul>
+<li> If there is no more valuable activity coming up, spend all the energy we have.</li>
+<li> Consider the nearest more valuable activity <b>X</b>. If we can spend any energy, and still have <b>E</b> energy when <b>X</b> comes (assuming we don't spend any between now and <b>X</b>), spend as much as we can while still having <b>E</b> when <b>X</b> comes. Notice the alternative to spending it now would be to spend it between now and <b>X</b> — but there's no activity more valuable than the current one in the period to make it worthwhile.</li>
+<li> If we can't spend any energy and still have <b>E</b> when <b>X</b> comes, we shouldn't spend any — all our energy will be better spent at <b>X</b>.</li>
+</ul>
+<p></p>
+
+<p>Thanks to for pointing this out to us! The credit for this solution goes to  pedrosorio; other O(<b>N</b>) solutions are possible as well (see, e.g., misof's submission).</p></div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>The luck factor</h2>
+<p>This problem is unusual in that you do not have full information and are forced to make guesses as part of the solution. We thought it would be a fun change from the usual deterministic setting.</p>
+<p>Nevertheless, luck did not play a huge role in this problem. The first dataset was easy enough for many approaches to work. The second dataset was harder, but we estimated that an optimal solution would have very good chances: the probability of an optimal solution failing is only on the order of 1 in a million! This is because 8000 is a lot of independent guesses, and the limit <b>X</b> is rather conservative: about 5 standard deviations below the expected number of correct guesses.</p>
+
+<h2>The optimal strategy</h2>
+<p>One may be tempted to apply various heuristics to try to reason about what kind of hidden numbers are likely. In this case, it is best to approach the problem scientifically and simply always go for the highest probability of success!</p>
+<p>In order to do that, we compute the probability of each of the 18564 possibilities (for the larger dataset) and pick the largest one.</p>
+<p>Why 18564? There are 7 choices for each of the 12 hidden numbers. That seems to give 7<sup>12</sup> = 13841287201 possibilities, which is a lot. But, the order of hidden numbers doesn't matter, which reduced the number of different possibilities to (12+7-1) choose (7-1) = 18564. Try to derive this formula! Or just generate them all and count.</p>
+
+<h2>A priori probabilities: K=0</h2>
+<p>What if K=0, so we have no information about the hidden numbers at all? It may seem like then it doesn't matter what we guess, since all possibilities are equally likely. Many contestants made this mistake. Some possibilities are more likely a priori than others, even without any additional information!</p>
+<p>For example, for the small dataset: 333 is less likely than 234. 6 times less likely, to be exact. Why? Because 234 may have been generated in 6 different ways (234, 243, 324, 342, 423, 432) while 333 can be generated in only 1 way.</p>
+<p>In general, if digit <b>d</b> appears <b>C<sub>d</sub></b> times among hidden cards, the probability of that set is <b>N</b>! / (<b>C<sub>2</sub></b>! * ... * <b>C<sub>M</sub></b>! * (<b>M</b>-1)<sup><b>N</b></sup>).</p>
+
+<h2>K=1 and Bayes' theorem</h2>
+<p>So we have computed the a priori probability of every set of hidden cards, but that does not use the crucial available information: the <b>K</b> products of random subsets. How do we use that information? Conditional probabilities are the right tool for the job.</p>
+<p>Let's start with <b>K</b>=1. For each set of hidden numbers, <b>A</b>, we already know the probability of that set happening, Pr(<b>A</b>). We also know a product <b>p</b> of a random subset of these numbers. What we are trying to compute is the conditional probability that the hidden set is <b>A</b> given that the product of a random subset is <b>p</b>. Let's write that as Pr(<b>A</b> | <b>p</b>).</p>
+<p>How to compute that? Use the definition of conditional probabilities:<br>
+Pr(<b>A</b> | <b>p</b>) = Pr(<b>A</b> ∩ <b>p</b>) / Pr(<b>p</b>) = Pr(<b>A</b>) * Pr(<b>p</b> | <b>A</b>) / Pr(<b>p</b>)<br>
+This derivation is called Bayes' theorem.</p>
+<p>We already know Pr(<b>A</b>), so we only need to know Pr(<b>p</b> | <b>A</b>). We can pre-compute these values for every <b>A</b>. Simply try every possible subset of each possible set of hidden numbers, see what the products are in each case, and build a large table of all these probabilities. There are 18564 * 2<sup>12</sup> ≈ 76 million such subsets.</p>
+<p>Pr(<b>p</b>) can then be computed as the sum of Pr(<b>A</b>) * Pr(<b>p</b> | <b>A</b>) over all <b>A</b>.</p>
+
+<h2>The complete solution</h2>
+<p><b>K</b> is greater than 1, but that's not a problem: we iterate the above reasoning for each of the <b>K</b> products, adjusting the probabilities of the hidden combinations in the process.</p>
+<p>The full solution is then:</p>
+<ul>
+<li>Some precomputation:
+<ul>
+<li>Generate all possible combinations of hidden numbers, ignoring order.</li>
+<li>Compute the initial probability of each of these hidden sets.</li>
+<li>For each possible hidden set, find all possible products of subsets and compute Pr(<b>p</b> | <b>A</b>). Index these values by <b>p</b> for easy lookup later.
+</li></ul>
+</li>
+<li>For each hidden set:
+<ul>
+<li>Start with the pre-computed initial probability distribution over possible hidden sets.</li>
+<li>Read one product <b>p</b> at a time, and adjust the probability distribution by using Bayes' theorem and the pre-computed conditional probabilities Pr(<b>p</b> | <b>A</b>).</li>
+<li>Output the most probable possibility.
+</li></ul>
+</li>
+</ul></div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">Manage your Energy<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">23:37</td><td></td><td><i>In "Manage your Energy" in the input, R &gt; E sometimes, even though the problem statement says it shouldn't.</i></td><td></td><td class="clarTimeColumn" style="color: red;">27:29</td><td></td><td><i>The "limit" saying R &lt;= E has now been replaced with a different limit for R; it is *not* required to be &lt;= E.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="ZDkwODI3NzBmYmYzMTdmY2M2MTA4NTZiNjJkZThjNjh8fDEzOTc1NDgzODE1MjY5NzE="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="2464487">A. Bullseye</option><option value="2645486">B. Manage your Energy</option><option value="2652486">C. Good Luck</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2013 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://developers.google.com/appengine"><img src="./Dashboard - Round 1A 2013 - Google Code Jam_files/appengine-noborder-120x30.gif"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>
