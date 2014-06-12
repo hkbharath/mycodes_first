@@ -1,0 +1,51 @@
+/**
+ *	Author : hkbharath
+ *	Problem : http://www.codechef.com/APRIL14/problems/ADIGIT
+ *	Lang : C++
+ */	
+
+#include <bits/stdc++.h>
+
+#define _ ios_base::sync_with_stdio(0);cin.tie(0);
+#define FOR(a,b,c) for(int a=b;a<=c;++a)
+#define RFOR(a,b,c) for(int a=b;a>=c;--a)
+#define LOOP(a) FOR(xx,1,a)
+#define PB(b) push_back(b)
+#define MP(a,b) make_pair(a,b)
+#define MOD 1000000007
+using namespace std;
+typedef long long int64;
+typedef pair<int,int> pii;
+typedef vector<int> vi;
+
+void solve(int tt){
+  int n,m;
+  scanf("%d%d",&n,&m);
+  getchar();
+  char dig;
+  int ct[n+1][11],q;
+  memset(ct,0,sizeof(ct));
+  FOR(i,1,n){
+    scanf("%c",&dig);
+    FOR(j,0,9)ct[i][j]=ct[i-1][j];
+    ct[i][dig-'0']++;
+    ct[i][10]=(int)dig-'0';
+    FOR(j,0,10)printf("%d ",ct[i][j]);
+    printf("\n");  }
+  LOOP(m){
+    scanf("%d",&q);
+    int64 sol=0;
+    printf("%d..\n",ct[q][10]);
+    FOR(i,ct[q][10],9)
+      sol=sol+(int64)ct[q][i]*(i-ct[q][10]);
+    RFOR(i,ct[q][10],0)
+      sol=sol+(int64)ct[q][i]*(ct[q][10]-i);
+    printf("%lld\n",sol);	
+  }
+}
+
+int main(){ _
+    int t,it;
+  //	for(cin>>t,it=1;it<=t;it++)
+  solve(it);
+}

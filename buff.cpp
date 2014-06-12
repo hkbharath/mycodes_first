@@ -39,6 +39,6 @@ void solve(int tt){
 
 int main(){
 	int t,it;
-	for(scanf("%d",&t),it=1;it<=t;it++)
+	//	for(scanf("%d",&t),it=1;it<=t;it++)
 		solve(it);
 }

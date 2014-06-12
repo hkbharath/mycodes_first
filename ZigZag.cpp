@@ -1,0 +1,40 @@
+// BEGIN CUT HERE
+
+// END CUT HERE
+#line 5 "ZigZag.cpp"
+
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cstring>
+#include <cmath>
+#include <cstdlib>
+#include <climits>
+#include <iostream>
+using namespace std;
+
+class ZigZag {
+	public:
+	int longestZigZag(vector <int> seq) {
+		int n=seq.size();
+		int dp[n+1],state[n+1];
+		//if(n<=2)return n;
+		for(int i=0;i<n;i++){
+			dp[i]=1;
+			state[i]=-1;
+			for(int j=i-1;j>=0;j--){
+				if(state[j]==0 && seq[i]-seq[j]>0 && dp[i]<=dp[j]+1)state[i]=1,dp[i]=dp[j]+1;
+				if(state[j]==1 && seq[i]-seq[j]<0 && dp[i]<=dp[j]+1)state[i]=0,dp[i]=dp[j]+1;
+				if(state[j]==-1 && dp[i]<dp[j]+1){
+					if(seq[i]-seq[j]>0)state[i]=1;
+					else if(seq[i]-seq[j]<0)state[i]=0;
+					else continue;
+					dp[i]=dp[j]+1;
+				}
+			}
+		}
+		for(int i=0;i<n;i++)cout<<dp[i]<<endl;
+		return dp[n-1];
+		
+	}
+};

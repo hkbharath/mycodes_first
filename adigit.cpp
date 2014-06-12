@@ -1,0 +1,52 @@
+/**
+ *	Author : hkbharath
+ *	Problem : http://www.codechef.com/APRIL14/problems/ADIGIT
+ *	Lang : C++
+ */	
+
+#include <bits/stdc++.h>
+
+#define _ ios_base::sync_with_stdio(0);cin.tie(0);
+#define FOR(a,b,c) for(int a=b;a<=c;++a)
+#define RFOR(a,b,c) for(int a=b;a>=c;--a)
+#define LOOP(a) FOR(xx,1,a)
+#define PB(b) push_back(b)
+#define MP(a,b) make_pair(a,b)
+#define MOD 1000000007
+using namespace std;
+typedef long long int64;
+typedef pair<int,int> pii;
+typedef vector<int> vi;
+
+void solve(int tt){
+  int n,m;
+  scanf("%d%d",&n,&m);
+  char dig[100001];
+  int ct[n+1][10],q;
+  int64 ans[100001];
+  scanf("%s",dig);
+  memset(ct,0,sizeof(ct));
+	FOR(i,1,n){
+		int num=dig[i-1]-'0';
+		ans[i]=0;
+		FOR(j,num+1,9){
+			ct[i][j]=ct[i-1][j];
+			ans[i]+=ct[i][j]*(j-num);
+		}
+		RFOR(j,num-1,0){
+			ct[i][j]=ct[i-1][j];
+			ans[i]+=ct[i][j]*(num-j);
+		}
+		ct[i][num]=ct[i-1][num]+1;
+	}
+	LOOP(m){
+		scanf("%d",&q);
+		printf("%lld\n",ans[q]);
+	}
+}
+
+int main(){ _
+    int t,it;
+  //	for(cin>>t,it=1;it<=t;it++)
+    solve(it);
+}
